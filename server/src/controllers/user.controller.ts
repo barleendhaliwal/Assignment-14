@@ -48,7 +48,6 @@ export class UserController {
   })
   async signUp(@requestBody() userData: User) {
 
-    console.log('here signup')
     validateCredentials(_.pick(userData, ['email', 'password']))
     //encrypt password
     userData.password = await this.hasher.hashPassword(userData.password)

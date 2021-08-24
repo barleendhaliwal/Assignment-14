@@ -37,9 +37,7 @@ export class MyCustomUserService implements UserService<User, Credentials>{
         }
 
     }
-    log(){
-        console.log(' zsdncvksn')
-    }
+ 
     
 
 }
